@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    tools:context=".Auth">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+
+        android:text="👋 Добро пожаловать!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        android:layout_gravity="center"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text="Войдите, чтобы пользоваться функциями\nприложения!"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        android:gravity="left"
+        android:layout_gravity="center"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+
+        android:text="Вход по E-mail"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+
+        android:id="@+id/auth_email"
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:ems="10"
+        android:inputType="textEmailAddress"
+
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"
+        android:hint="example@mail.ru"
+        android:background="@drawable/input_bg"
+        android:textColorHint="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/auth_button"
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:onClick="checkAuth"
+
+        android:text="Далее"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:background="@drawable/button_email_disable_bg"/>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+
+        android:text="Или войдите с помощью"
+        android:textColor="#939396"
+        android:textSize="15sp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="Войти с Яндекс"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:background="@drawable/button_empty_bg"/>
+</LinearLayout>

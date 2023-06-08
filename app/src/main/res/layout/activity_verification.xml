@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    tools:context=".Verification">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="24dp"
+
+        android:background="@drawable/button_back"
+
+        android:hint="."
+        android:onClick="goBack" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+
+        android:gravity="center"
+
+        android:text="Введите код из E-mail"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+
+        <EditText
+
+            android:id="@+id/verification_emain_1"
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:background="@drawable/email_gb"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:hint="."
+            android:maxLength="1"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+
+            android:id="@+id/verification_emain_2"
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+
+            android:background="@drawable/imput_bg"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:hint="."
+            android:maxLines="1"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+
+            android:id="@+id/verification_emain_3"
+            android:hint="."
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+
+
+            android:background="@drawable/imput_bg"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/verification_emain_4"
+
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+
+            android:background="@drawable/imput_bg"
+            android:gravity="center"
+            android:hint="."
+
+            android:inputType="number"
+            android:maxLength="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/verification_reset_code"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+
+        android:text="Отправить код повторно можно\nбудет через 42 секунд"
+        android:textColor="#939396"
+        android:gravity="center"/>
+
+</LinearLayout>

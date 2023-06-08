@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    tools:context=".CreateAccount">
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:layout_marginTop="56dp"
+            android:layout_marginStart="20dp"
+
+            android:text="Создание карты\nпациента"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginEnd="20dp"
+
+            android:text="Пропустить"
+            android:textColor="#1A6FEE"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+
+
+            android:text="Без карты пациента вы не сможете заказать анализы."
+            android:textColor="#939396"
+            android:textSize="14sp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+
+            android:text="В картах пациентов будут храниться результаты\nанализов вас и ваших близких."
+            android:textColor="#939396"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <EditText
+
+        android:id="@+id/account_name"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+
+        android:gravity="start|center_vertical"
+
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:maxLength="10"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+
+        android:hint="Имя"
+        android:textColorHint="#939396"
+        android:paddingStart="14dp"
+
+        android:background="@drawable/input_bg"/>
+
+
+    <EditText
+
+        android:id="@+id/account_surname_1"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+
+        android:gravity="start|center_vertical"
+
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:maxLength="10"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+
+        android:hint="Отчество"
+        android:textColorHint="#939396"
+        android:paddingStart="14dp"
+
+        android:background="@drawable/input_bg"/>
+
+    <EditText
+
+        android:id="@+id/account_surname_2"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+
+        android:gravity="start|center_vertical"
+
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:maxLength="10"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+
+
+        android:hint="Фамилия"
+        android:textColorHint="#939396"
+        android:paddingStart="14dp"
+
+        android:background="@drawable/input_bg"/>
+
+    <TextView
+
+        android:id="@+id/account_birthday"
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:gravity="start|center_vertical"
+
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:hint="Дата рождения"
+        android:textColorHint="#939396"
+        android:paddingStart="14dp"
+
+        android:background="@drawable/input_bg" />
+
+    <EditText
+
+        android:id="@+id/account_sex"
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center"
+
+        android:gravity="start|center_vertical"
+
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        android:maxLength="10"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+
+
+        android:hint="Пол"
+        android:textColorHint="#939396"
+        android:paddingStart="14dp"
+
+        android:background="@drawable/input_bg"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/account_button"
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="Создать"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:background="@drawable/button_email_disable_bg"/>
+
+
+</LinearLayout>

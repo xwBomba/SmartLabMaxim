@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    tools:context=".Session">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_gravity="top"
+            android:layout_marginStart="30dp"
+
+            android:layout_weight="1"
+
+            android:onClick="sessionSkip"
+
+            android:text="Пропустить"
+
+            android:textColor="#57A9FF"
+            android:textSize="20sp" />
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+
+            android:src="@drawable/session_logo" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+
+            android:id="@+id/session_main_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="Анализы"
+
+            android:textSize="24sp"
+            android:textColor="#00B712" />
+
+
+        <TextView
+
+            android:id="@+id/session_lore_text"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="29dp"
+
+            android:text="Экспресс сбор и получение проб"
+
+            android:textSize="20sp"
+            android:textColor="#939396"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/session_state"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="42dp"
+
+        android:src="@drawable/session_state_1" />
+
+    <ImageView
+
+        android:id="@+id/session_banner"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="68dp"
+
+        android:src="@drawable/session_banner_1" />
+
+
+</LinearLayout>
